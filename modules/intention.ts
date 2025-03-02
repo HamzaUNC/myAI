@@ -2,23 +2,7 @@ import { OpenAI } from "openai";
 import { zodResponseFormat } from "openai/helpers/zod";
 import { Chat, Intention, intentionSchema, IntentionType } from "@/types";
 import { HISTORY_CONTEXT_LENGTH } from "@/configuration/chat";
-import { intentionTypeSchema } from "@/types";
-import { INTENTION_PROMPT } from "@/configuration/prompts"; // Remove this line
-
-// Add new intention detection logic
-export async function detectIntention(chat: Chat) {
-  // Use your new intention system from updated prompts.ts
-  const prompt = `
-  Classify hiking-related queries into:
-  - Trail navigation
-  - Gear advice
-  - Safety/emergency
-  - Trail conditions
-  - General knowledge
-  `;
-  
-  // Your implementation here
-}
+import { INTENTION_PROMPT } from "@/configuration/prompts";
 import { INTENTION_MODEL } from "@/configuration/models";
 
 /**
