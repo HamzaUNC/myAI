@@ -100,3 +100,10 @@ ${mostRecentMessages.map(m => `${m.role}: ${m.content}`).join("\n")}
 **Good Example**: "${DOCUMENT_NAMES.CHECKLISTS}: Always carry a whistle."
 `;
 }
+export {
+  INTENTION_PROMPT,
+  RESPOND_TO_QUESTION_SYSTEM_PROMPT,
+  RESPOND_TO_HOSTILE_MESSAGE_SYSTEM_PROMPT,
+  HYDE_PROMPT,
+  RESPOND_TO_QUESTION_BACKUP_SYSTEM_PROMPT
+};
